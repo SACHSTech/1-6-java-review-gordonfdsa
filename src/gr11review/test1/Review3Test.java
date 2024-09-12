@@ -31,7 +31,7 @@ public class Review3Test {
 
         solutionStr += sep;
 
-        for(int j = 29;  j > 2; j--){
+        for(int j = 29;  j >= 2; j--){
             solutionStr += Integer.toString(j) + sep;
         }
 

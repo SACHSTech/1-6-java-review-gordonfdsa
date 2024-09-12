@@ -26,7 +26,7 @@ public class Review3 {
         out.println();
 
         // Output numbers from 29-2 decreasing
-        for (int i = 29; i > 2; i--) {
+        for (int i = 29; i >= 2; i--) {
             out.println(i);
         }
 
