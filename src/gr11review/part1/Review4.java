@@ -33,8 +33,9 @@ public class Review4 {
 
         // Getting the items
         for (int i = 0; i < intItems; i++) {
-            out.print("Enter the price for item 1: ");
+            out.print("Enter the price for item " + (i+1) + ": ");
             out.flush();
+            //adding new price to subtotal
             dblSubTotal += Double.parseDouble(br.readLine());
         }
 
