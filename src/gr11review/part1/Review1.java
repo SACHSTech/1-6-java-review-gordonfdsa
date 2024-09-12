@@ -8,16 +8,14 @@ import java.lang.Math.*;
  * Create a program that asks the user to enter a month number and day and then
  * prints the day of the year
  * 
- * @param intMonth Month number
- * @param intDay   Day number
- * @return day of the year
- * @author Gordon
+ * @author Gordon Z
  */
 
 public class Review1 {
 
     public static void main(String[] args) throws IOException {
 
+        //Initialization
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int[] arrMonthToDays = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
