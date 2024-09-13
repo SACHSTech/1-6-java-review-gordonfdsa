@@ -19,11 +19,32 @@ public class Review5 {
         // Initialization
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
-        DecimalFormat df = new DecimalFormat("0.00");
+        double dblYearlyAmount; 
+        double dblInterest;
+        double dblTargetAmount;
+        double dblCurrAmount = 0;
+        int intYears = 0 ; 
 
-        
+        // Inputs
+        System.out.print("Enter the yearly invested amount: ");
+        dblYearlyAmount = Double.parseDouble(br.readLine());
 
-        out.flush();
+        System.out.print("Enter the compound interest rate: ");
+        dblInterest = Double.parseDouble(br.readLine());
+
+        System.out.print("Enter the target amount: ");
+        dblTargetAmount = Double.parseDouble(br.readLine());
+
+        //Calculation for number of years needed
+        while(dblCurrAmount<dblTargetAmount){
+            dblCurrAmount+= dblYearlyAmount;
+            dblCurrAmount += dblCurrAmount * (dblInterest/100);
+            intYears++;
+        }
+
+        // Output the result
+        System.out.println("The target amount will be earned in " + intYears + " years.");
+
         br.close();
         out.close();
     }
