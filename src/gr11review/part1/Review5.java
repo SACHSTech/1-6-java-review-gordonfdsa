@@ -1,9 +1,7 @@
 package gr11review.part1;
 
-import java.util.*;
 import java.io.*;
-import java.lang.Math.*;
-import java.text.DecimalFormat;
+
 
 /**
  * Write a program that prompts for a yearly_amount, annual

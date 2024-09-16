@@ -1,8 +1,7 @@
 package gr11review.part1;
 
-import java.util.*;
 import java.io.*;
-import java.lang.Math.*;
+
 
 /**
  * Create a program that asks the user to enter a month number and day and then

@@ -1,6 +1,5 @@
 package gr11review.part1;
 
-import java.util.*;
 import java.io.*;
 import java.text.DecimalFormat;
 

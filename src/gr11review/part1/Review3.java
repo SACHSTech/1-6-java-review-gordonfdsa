@@ -1,8 +1,7 @@
 package gr11review.part1;
 
-import java.util.*;
 import java.io.*;
-import java.lang.Math.*;
+
 
 /**
  * Program that prints the odd numbers from 20 to 100 and prints the numbers

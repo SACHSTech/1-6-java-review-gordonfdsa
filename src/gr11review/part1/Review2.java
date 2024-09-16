@@ -1,8 +1,7 @@
 package gr11review.part1;
 
-import java.util.*;
+
 import java.io.*;
-import java.lang.Math.*;
 
 /**
  * A program that prints out a statement of options. Allow the user to select an

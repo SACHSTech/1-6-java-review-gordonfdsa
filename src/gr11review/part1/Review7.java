@@ -1,9 +1,7 @@
 package gr11review.part1;
 
-import java.util.*;
 import java.io.*;
-import java.lang.Math.*;
-import java.text.DecimalFormat;
+
 
 /**
  * A program that will input a sentence from the user and store it in a String
