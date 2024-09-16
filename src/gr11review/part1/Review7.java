@@ -15,19 +15,25 @@ import java.text.DecimalFormat;
 
 public class Review7 {
 
+    /**
+     * Main method to execute the program logic
+     * 
+     * @param args Command-line arguments (not used)
+     * @throws IOException input exceptions if error occurs
+     */
+
     public static void main(String[] args) throws IOException {
 
         // Initialization
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
-        //Inputs
-        String strTheSentence; 
+        // Inputs
+        String strTheSentence;
         strTheSentence = br.readLine();
 
         // 1. Output number of characters in the sentence
         out.println("There are " + strTheSentence.length() + " characters in the sentence.");
-
 
         // 2. Output number of spaces in the sentence
         int spaceCount = 0;
@@ -38,7 +44,6 @@ public class Review7 {
         }
         out.println("There are " + spaceCount + " spaces in the sentence.");
 
-
         // 3. Output number of 'a' letters in the sentence
         int aCount = 0;
         for (int i = 0; i < strTheSentence.length(); i++) {
@@ -48,21 +53,19 @@ public class Review7 {
         }
         out.println("There are " + aCount + " letter a in the sentence.");
 
-        
         // 4. Output odd-numbered characters as '-' in the sentence
-            if(strTheSentence.length()%2==0){
-                //String is even length
-                for(int i = 0 ; i < strTheSentence.length()/2; i++){
-                    out.print("-");
-                }
-            }else{
-                //String is odd length
-                for(int i = 0 ; i < (strTheSentence.length()+1)/2; i++){
-                    out.print("-");
-                }
+        if (strTheSentence.length() % 2 == 0) {
+            // String is even length
+            for (int i = 0; i < strTheSentence.length() / 2; i++) {
+                out.print("-");
             }
-            out.println();
-     
+        } else {
+            // String is odd length
+            for (int i = 0; i < (strTheSentence.length() + 1) / 2; i++) {
+                out.print("-");
+            }
+        }
+        out.println();
 
         br.close();
         out.close();

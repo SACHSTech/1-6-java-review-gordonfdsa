@@ -5,13 +5,21 @@ import java.io.*;
 import java.lang.Math.*;
 
 /**
- * Allow the user to select an option for a joke and prints the joke based on
+ * A program that prints out a statement of options. Allow the user to select an
+ * option for a joke and prints the joke based on
  * selection.
  * 
  * @author Gordon Z
  */
 
 public class Review2 {
+
+    /**
+     * Main method to execute the program logic
+     * 
+     * @param args Command-line arguments (not used)
+     * @throws IOException input exceptions if error occurs
+     */
 
     public static void main(String[] args) throws IOException {
 
